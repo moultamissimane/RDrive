@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon.png">
+	<link rel="shortcut icon" href="apple-touch-icon.png" type="image/png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-navbutton-color" content="#ffffff">
+  <title>No Internet</title>
+  <style>
+    html * {
+      padding: 0;
+      margin: 0;
+    }
+    html, body {
+      height: 100vh;
+  
+    }
+
+    .light {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .dark {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    .container {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding-top: 200px;
+    } 
+    .pull {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    } 
+
+ 
+    a:link, a:visited {
+      color: #0969da;
+      border: 1px solid #424548;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 20px;
+      margin-top: 10px;
+    }
+    a:hover {
+      background-color: #0969da;
+      color: white;
+    }
+
+.button {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 10px;
+}
+
+.button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="no-signal.png" alt="No Internet" height="300">
+  </div>
+  <div class="pull">
+    <h1>Connect to the Internet</h1>
+    <p>You're offline. Check your connection</p>
+    <button class="button"type="button" onClick="window.location.reload()">
+      Try Again
+   </button>
+  </div>
+
+
+  <script>
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      // The user's system is currently in dark mode
+      document.body.classList.add('dark');
+    } else {
+      // The user's system is currently in light mode
+      document.body.classList.add('light');
+    }
+  </script>
+</body>
+</html>

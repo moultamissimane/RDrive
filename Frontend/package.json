@@ -14,12 +14,26 @@
     "check-types": "tsc --noEmit --pretty"
   },
   "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@headlessui/react": "^1.7.17",
+    "awesome-debounce-promise": "^2.1.0",
     "classnames": "^2.3.2",
+    "framer-motion": "^10.16.4",
     "next": "^13.4.12",
+    "next-i18next": "^14.0.3",
     "next-seo": "^6.1.0",
     "react": "^18.2.0",
+    "react-async-hook": "^4.0.0",
+    "react-cookie": "^6.1.1",
     "react-dom": "^18.2.0",
-    "styled-jsx-plugin-postcss": "^4.0.1"
+    "react-hot-toast": "^2.4.1",
+    "react-hotkeys-hook": "^4.4.1",
+    "react-icons": "^4.11.0",
+    "react-image": "^4.1.0",
+    "styled-jsx-plugin-postcss": "^4.0.1",
+    "swr": "^2.2.2",
+    "use-clipboard-copy": "^0.2.0",
+    "use-constant": "^1.1.1"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^13.4.12",
